@@ -1,0 +1,37 @@
+* {
+  font-family: "Poppins";
+  background-color: #6BA3BE;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.chessboard {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80vmin;
+  border: 4px solid rgb(0, 0, 0);
+  aspect-ratio: 1;
+}
+
+.white-square {
+  width: 12.5%;
+  height: 12.5%;
+  background-color: rgb(204,183,174);
+}
+
+.black-square {
+  width: 12.5%;
+  height: 12.5%;
+  background-color: rgb(112,102,119);
+}
+
