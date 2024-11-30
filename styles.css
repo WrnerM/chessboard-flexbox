@@ -7,15 +7,15 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .chessboard {
-  margin-top: 3%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   max-width: 80vmin;
-  max-height: auto;
+  max-height: 80vmin;
   border: 4px solid rgb(0, 0, 0);
   aspect-ratio: 1;
 }
@@ -33,11 +33,18 @@ main {
 }
 
 .piece {
-  font-size: 2em;      /* Adjust size as needed */
+  font-size: 2em;     
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Poppins', sans-serif; /* Optional: font styling */
+  font-family: 'Poppins', sans-serif;
   background-color: transparent;
 }
 
+/* sizing the unicode chess pieces with flex */
+.white-square, .black-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(55vmin/8);
+}
